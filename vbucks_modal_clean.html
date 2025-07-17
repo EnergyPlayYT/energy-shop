@@ -1,0 +1,49 @@
+    <!-- Fortnite VBucks Modal -->
+    <div id="vbucksModal" class="modal">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal('vbucksModal')">&times;</button>
+            <div class="text-center mb-6">
+                <div class="text-6xl mb-4">🏆</div>
+                <h2 class="text-3xl font-bold text-white mb-2">Fortnite VBucks</h2>
+                <div class="text-2xl font-bold text-purple-400">Price Calculator</div>
+            </div>
+            
+            <div class="space-y-6 text-gray-300">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-3">🎮 VBucks Accounts:</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>💎 +13500 VBucks account - €30+</li>
+                        <li>📧 Full access (You can change it to your own email)</li>
+                        <li>🔒 Safe and secure</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-3">🧮 Gifting Service Calculator:</h3>
+                    <div class="calculator-section bg-white/5 p-4 rounded-lg">
+                        <label for="vbucksAmount" class="block text-white mb-2">Enter VBucks amount:</label>
+                        <input type="number" id="vbucksAmount" placeholder="Enter amount" min="0" class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600 focus:border-purple-400 focus:outline-none" oninput="calculateVBucksPrice()">
+                        
+                        <div id="calculatorResult" class="calculator-result mt-4 p-3 bg-purple-600/20 rounded">
+                            <p>Enter an amount to calculate the price</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-3">📊 Pricing Tiers:</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>🥉 0-999 VBucks = 100 VBucks/€0.40</li>
+                        <li>🥈 1000-9999 VBucks = 100 VBucks/€0.35</li>
+                        <li>🥇 +10000 VBucks = 100 VBucks/€0.30</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <button onclick="createDiscordTicket('Fortnite VBucks'); closeModal('vbucksModal');" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all">
+                    Order Now
+                </button>
+            </div>
+        </div>
+    </div>
