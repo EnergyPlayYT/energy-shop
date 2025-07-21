@@ -1253,13 +1253,13 @@ We apologize for the inconvenience!`);
             let tier;
             
             if (amount <= 999) {
-                pricePerHundred = 0.40;
+                pricePerHundred = 0.30;
                 tier = "🥉 Bronze Tier (0-999)";
             } else if (amount <= 9999) {
-                pricePerHundred = 0.35;
+                pricePerHundred = 0.25;
                 tier = "🥈 Silver Tier (1000-9999)";
             } else {
-                pricePerHundred = 0.30;
+                pricePerHundred = 0.22;
                 tier = "🥇 Gold Tier (10000+)";
             }
             
@@ -1268,7 +1268,7 @@ We apologize for the inconvenience!`);
             resultDiv.innerHTML = `
                 <div class="text-center">
                     <p class="text-lg font-bold text-purple-400">${tier}</p>
-                    <p class="text-xl font-bold text-white">Total Price: €${totalPrice.toFixed(2)}</p>
+                    <p class="text-xl font-bold text-white">Total Price: ${totalPrice.toFixed(2)}€</p>
                     <p class="text-sm text-gray-300">For ${amount} VBucks</p>
                     <p class="text-xs text-gray-400">Rate: €${pricePerHundred}/100 VBucks</p>
                 </div>
